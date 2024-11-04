@@ -93,7 +93,6 @@ for filename in os.listdir(IMAGE_FOLDER_NAME):
     if os.path.isfile(filepath):
         img = Image.open(filepath)
         # Add padding to images to resize heights to max height
-        print(img.height, target_height)
         if (img.height < target_height):
             padded_image = add_padding_top(img, target_height-img.height)
             padded_image.save(filepath)
