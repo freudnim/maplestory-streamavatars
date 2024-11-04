@@ -8,7 +8,9 @@ OUTPUT_FILE = "spritesheet.png"
 # Add transparent padding to match target width and height.
 def add_padding(image, target_width, target_height):
     new_image = Image.new("RGBA", (target_width, target_height), (0, 0, 0, 0))
-    new_image.paste(image, ((target_width - image.width) // 2, (target_height - image.height) // 2))
+    padding_left = target_width - image.width
+    padding_top = target_height - image.height
+    new_image.paste(image, (padding_left, padding_top))
     return new_image
 
 def delete_irrelevant_files(allowed_filenames):
