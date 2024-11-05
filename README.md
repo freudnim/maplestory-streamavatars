@@ -14,6 +14,4 @@ drag unzipped folder (should be called CharacterSpriteSheet) in same dir as this
 
 `python ms_streamavatar_spritesheet.py`
 
-at this point all sprites should have the same dimensions. sometimes it misses one (🍝), so just rerun the script again 
-
 follow instructions printed to console
