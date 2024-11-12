@@ -15,3 +15,7 @@ drag unzipped folder (should be called CharacterSpriteSheet) in same dir as this
 `python ms_streamavatar_spritesheet.py`
 
 follow instructions printed to console
+
+## todo
+
+throw when max dimensions > 500
